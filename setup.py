@@ -19,12 +19,12 @@ setuptools.setup(
     packages=setuptools.find_packages(where="forecast_mlops"),
 
     install_requires=[
-        "aws-cdk.core==1.90.1",
-        "aws-cdk.aws_iam==1.90.1",
-        "aws-cdk.aws_sqs==1.90.1",
-        "aws-cdk.aws_sns==1.90.1",
-        "aws-cdk.aws_sns_subscriptions==1.90.1",
-        "aws-cdk.aws_s3==1.90.1",
+        "aws-cdk.core==1.91.0",
+        "aws-cdk.aws_iam==1.91.0",
+        "aws-cdk.aws_sqs==1.91.0",
+        "aws-cdk.aws_sns==1.91.0",
+        "aws-cdk.aws_sns_subscriptions==1.91.0",
+        "aws-cdk.aws_s3==1.91.0",
     ],
 
     python_requires=">=3.6",

@@ -6,6 +6,6 @@ from forecast_mlops.forecast_mlops_stack import ForecastMlopsStack
 
 
 app = core.App()
-ForecastMlopsStack(app, "forecast-mlops", env={'region': 'us-west-2'})
+ForecastMlopsStack(app, "forecast-mlops", env={'region': 'ap-northeast-2'})
 
 app.synth()

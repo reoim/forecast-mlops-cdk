@@ -1,0 +1,49 @@
+{
+  "DatasetGroup": {
+    "DatasetGroupName":"ForecastDemoGroup",
+    "Domain": "CUSTOM"
+  },
+  "Predictor": {
+    "PredictorName": "ForecastDemoPredictor",
+    "AlgorithmArn": "arn:aws:forecast:::algorithm/Deep_AR_Plus",
+    "ForecastHorizon": 60, 
+    "FeaturizationConfig":{
+      "ForecastFrequency":"D" 
+    },
+    "PerformAutoML": false 
+  },
+  "Forecast": {
+    "ForecastName": "ForecastDemo",
+    "ForecastTypes":[
+      "0.10", 
+      "0.50", 
+      "0.90"  
+    ]
+  },
+  "TimestampFormat": "yyyy-MM-dd",
+  "Datasets": [
+    {
+      "DatasetName": "ForecastDemoTargetTimeSeries",
+      "Domain": "CUSTOM",
+      "DatasetType": "TARGET_TIME_SERIES",
+      "DataFrequency": "D", 
+      "Schema": {
+        "Attributes": [
+          {
+             "AttributeName":"timestamp",
+             "AttributeType":"timestamp"
+          },
+          {
+             "AttributeName":"item_id",
+             "AttributeType":"string"
+          },
+          {
+             "AttributeName":"target_value",
+             "AttributeType":"float"
+          }
+        ]
+      }
+    }
+  ],
+  "PerformDelete": false
+}
