@@ -1,7 +1,7 @@
 -e .
 pytest
-aws_cdk.aws_lambda_event_sources
-aws_cdk.aws_athena
-aws_cdk.aws_stepfunctions
-aws_cdk.aws_stepfunctions_tasks
-aws_cdk.aws_lambda_python
+aws_cdk.aws_lambda_event_sources==1.91.0
+aws_cdk.aws_athena==1.91.0
+aws_cdk.aws_stepfunctions==1.91.0
+aws_cdk.aws_stepfunctions_tasks==1.91.0
+aws_cdk.aws_lambda_python==1.91.0
