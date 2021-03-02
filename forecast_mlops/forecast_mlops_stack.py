@@ -27,9 +27,13 @@ class ForecastMlopsStack(core.Stack):
 
         # ------ S3 Buckets ------
         # Create Athena bucket
-        athena_bucket = _s3.Bucket(self, "AthenaBucket")
+        athena_bucket = _s3.Bucket(self, "AthenaBucket",
+            removal_policy=core.RemovalPolicy.DESTROY
+        )
         # Create Forecast bucket
-        forecast_bucket = _s3.Bucket(self, "FoecastBucket")
+        forecast_bucket = _s3.Bucket(self, "FoecastBucket",
+            removal_policy=core.RemovalPolicy.DESTROY
+        )
 
 
         # ------ Athena ------ 
